@@ -1,5 +1,5 @@
 import pytest
-from ejercicio_13 import procesar_accion   # 👈 ajusta al nombre de tu archivo .py
+from ejercicio_13 import procesar_accion
 
 # ---- TESTS VÁLIDOS ----
 def test_ir_al_norte_desde_entrada():
