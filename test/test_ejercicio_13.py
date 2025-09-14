@@ -1,7 +1,7 @@
 import pytest
 from ejercicio_13 import procesar_accion
 
-# ---- TESTS VÁLIDOS ----
+
 def test_ir_al_norte_desde_entrada():
     ubicacion, llave, activo, msg = procesar_accion("entrada", "ir al norte", False)
     assert ubicacion == "pasillo"
@@ -19,7 +19,7 @@ def test_abrir_cofre_con_llave():
     assert activo is False
     assert "tesoro" in msg.lower()
 
-# ---- TESTS DE ERRORES / FLUJOS INVÁLIDOS ----
+
 def test_abrir_cofre_sin_llave():
     ubicacion, llave, activo, msg = procesar_accion("sala del cofre", "abrir cofre", False)
     assert activo is False

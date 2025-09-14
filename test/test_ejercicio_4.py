@@ -1,5 +1,5 @@
 import pytest
-from ejercicio4 import jugar_ronda   # reemplaza tu_archivo por el nombre real de tu archivo .py
+from ejercicio4 import jugar_ronda
 
 def test_empate_piedra():
     assert jugar_ronda("piedra", "piedra") == "empate"

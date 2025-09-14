@@ -1,7 +1,6 @@
 import pytest
-from ejercicio_5 import analizar_numero   # cambia "tu_archivo" por el nombre real de tu archivo .py
+from ejercicio_5 import analizar_numero
 
-# --- Casos válidos ---
 def test_numero_negativo():
     assert analizar_numero(-7) == {"negativo": True, "par": None, "multiplo_5": None}
 
@@ -17,7 +16,7 @@ def test_numero_impar_no_multiplo_5():
     assert result["par"] is False
     assert result["multiplo_5"] is False
 
-# --- Casos inválidos (deben lanzar TypeError) ---
+
 def test_string_lanza_typeerror():
     with pytest.raises(TypeError):
         analizar_numero("hola")

@@ -1,7 +1,6 @@
 
 import pytest
-from ejercici_10 import transponer_matriz_comprehension   # cambia tu_archivo por el nombre real
-
+from ejercici_10 import transponer_matriz_comprehension
 
 def test_matriz_rectangular():
     matriz = [[1, 2, 3], [4, 5, 6]]
